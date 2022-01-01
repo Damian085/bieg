@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  transition: .5s;
+}
+html{
+  margin:0;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #d0bda6;
+  margin: 0;
+}
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+h2,h3,a {
+  color: #fbfffa;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  margin: 0;
+  font-size: 1.9em;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.logo a, .main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.main-nav a {
+color: #fbfffa;
+font-size: 1.3em;
+transition: .5s;
+}
+.main-nav a:hover {
+color: #CE0101;
+border-bottom: 1px whitesmoke solid;
+transform: uppercase;
+}
+.header {
+padding-top: .5em;
+padding-bottom: .5em;
+background-color: #fbfffa;
+border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  background-color: #303030;  
+  line-height: 1.8;
+flex-direction: column;
+align-items: center;
+}
+.header,.main-nav {
+display: flex;
+}
+.container{
+  min-height: 100vh;
+}
+@media (min-width: 1090px) {
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+}
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  background-color: #212121;
+  color: #fbfffa;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.fcontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top{
+display: flex;
+  justify-content: space-between;
+flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+.top1,.top2,.top3{
+  margin: 0 50px 0 50px;
+}
+.bottom{
+  margin: 10px;
+}
+.fcontent hr{
+  width: 80%;
+}
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  .top{
+      flex-direction:column;
+  }
+  .top h1{
+      text-align: center;
+  }
+  .top1,.top2,.top3{
+    margin:0;
+  }
+ .form1{
+   flex-direction: column;
+ } 
+}
+#o-nas{
+  margin: 50px 0 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.contact-box{
+max-width: 980px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #fff;
+box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+.left{
+  background: url("img/mini-poster.png") no-repeat center;
+  background-color:#303030;
+  height: 100%;
+}
+.text{
+font-size:1.6rem;
+}
+h1{
+position: relative;
+padding: 0 0 10px;
+margin-bottom: 10px;
+}
+@media screen and (max-width: 880px){
+.contact-box{
+  grid-template-columns: 1fr;
+}
+.left{
+  height:700px;
+  background-size: auto;
+  }
+}
+.a{
+  width: 100%;
+}
+.zostan{
+  display: flex;
+  justify-content: center;
+  color: #d0bda6;
+}
+.form1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background:#303030 ;
+  margin: 50px 0;
+}
+.form1 .a form{
+	position: relative;
+	width: 80%;
+  
+}
+.form1 .a form .inputs{
+	position: relative;
+	margin-bottom: 40px;
+}
+.form1 .a form .inputs:last-child{
+	margin-bottom: 0px;
+}
+.form1 .a form .inputs input, 
+.form1 .a form .inputs textarea{
+	position: relative;
+	background: transparent;
+	outline: none;
+	border:none;
+	width:100%;
+	color: whitesmoke;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	resize: none;
+}
+.form1 .a form .inputs span{
+	position:absolute;
+	left: 0;
+	font-size:16px; 
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255, 255, 255,0.5);
+ }
+.form1 .a form .inputs input ~ span,
+.form1 .a form .inputs label  ~ span,
+.form1 .a form .inputs textarea ~ span{
+	transform: translateY(-24px);
+	color: #d0bda6;
+	font-size: 16px;
+}
+.form1 form{
+	position: relative;
+	width: 80%;
+  margin: 4rem 2rem;
+}
+.form1 form .inputs{
+	position: relative;
+	margin-bottom: 40px;
+}
+.form1 form .inputs:last-child{
+	margin-bottom: 0px;
+}
+.form1 form .inputs input, 
+.form1 form .inputs textarea{
+	position: relative;
+	background: transparent;
+	outline: none;
+	border:none;
+	width:100%;
+	color: whitesmoke;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	resize: none;
+}
+.form1 form .inputs span{
+	position:absolute;
+	left: 0;
+	font-size:16px; 
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255, 255, 255,0.5);
+ }
+.form1 form .inputs input ~ span,
+.form1 form .inputs label  ~ span,
+.form1 form .inputs textarea ~ span{
+	transform: translateY(-24px);
+	color: #d0bda6;
+	font-size: 16px;
+}
+#sbm{
+  max-width: 140px;
+}
+#sbm1{
+  max-width: 80px;
+}
+.left-a img,
+.right-a img{
+  margin: 1em 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px #fbfffa;
+}
+@media   (max-width: 1000px) {
+	 form{
+        padding: 0;
+        margin: 0;
+    }
+    .form1 input{
+		width: 100%;
+		margin: 10px 0;
+	}
+  .left-a img{
+    width: 300px;
+    height: 150px;
+  }
+  .right-a img{
+    width: 300px;
+    height: 500px;
+  }
+  .zostan{
+    text-align: center;
+  }
+}
+form .inputs textarea{
+	height: 100px;
+}
+span.err{
+  color: red;
+  font-size: 16px;
+  font-weight: 800;
+  transform: translateY(-200px);
+}
+
